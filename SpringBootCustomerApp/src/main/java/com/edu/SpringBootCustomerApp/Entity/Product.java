@@ -38,14 +38,14 @@ private String dateSold;
 	@ManyToMany(mappedBy="pro")
 
 	List <Customer> cust;
-	/*@OneToOne
+	@OneToOne
 	@JoinColumn(name="order_id",nullable=false)
-	private Order order;*/
+	private Order order;
 	
 	/*@ManyToMany
 	@JoinTable(name="product_customer",joinColumns=@JoinColumn(name="pro_id"),
-	inverseJoinColumns=@JoinColumn(name="cust_id"))
-	List<Customer >cust;*/
+	inverseJoinColumns=@JoinColumn(name="cust_id"))*/
+	
 	public void setProId(long proId) {
 		this.proId = proId;
 	}
